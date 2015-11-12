@@ -1,9 +1,11 @@
 <h1> Bats </h1>
+<p><%= link_to 'New Bat', new_bat_path %></p>
 <% @bats.each do |bat| %>
 	<h2><%= bat.name %></h2>
-	<h2><%= bat.description %></h2>
+	<h4><%= bat.description %></h4>
 	<p><%= bat.price %></p>
 	<p><%= bat.sku %></p>
-	<%= link_to 'Show Bat', bat_path(bat.id) %>
-	<p><%= link_to 'New Bat', new_bat_path %></p>
+	<p><%= link_to 'Show Bat', bat_path(bat.id) %></p>
+	<p><%= link_to 'Edit Bat', edit_bat_path(bat.id) %></p>
+	<p><%= link_to 'Delete Bat', bat, method: :delete %></p>
 <% end %>

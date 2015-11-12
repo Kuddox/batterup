@@ -21,6 +21,26 @@ class BatsController < ApplicationController
   	end
   end
 
+  def edit
+  	@bat = Bat.find(params[:id])
+  end
+
+  def update
+  	@bat = Bat.find(params[:id])
+
+  	if @bat.update_attributes(bat_params)
+  		redirect_to bats_path
+  	else
+  		render :edit
+  	end
+  end
+
+  def destroy
+  	@bat = Bat.find(params[:id])
+  	@bat.destroy
+  	redirect_to bats_path
+  end
+
   private	
 
   def bat_params
