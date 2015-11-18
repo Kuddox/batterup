@@ -5,7 +5,7 @@
 	<h4><%= bat.description %></h4>
 	<p><%= bat.price %></p>
 	<p><%= bat.sku %></p>
-	<p><%= link_to 'Show Bat', bat_path(bat.id) %></p>
-	<p><%= link_to 'Edit Bat', edit_bat_path(bat.id) %></p>
-	<p><%= link_to 'Delete Bat', bat, method: :delete %></p>
+	<p><%= link_to 'Display Bat', bat_path(bat.id) %></p>
+	<p><%= link_to 'Make Changes', edit_bat_path(bat.id) %></p>
+	<p><%= link_to 'REMOVE', bat, method: :delete %></p>
 <% end %>
