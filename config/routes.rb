@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-	resources :bats
 
   root 'static#home'
 
   get '/about', to: 'static#about', as: :about
+
+	resources :bats, :invoices
 
 end
 
