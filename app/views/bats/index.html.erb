@@ -1,3 +1,35 @@
+<div class="page-header">
+  <h1>Page Header for Bats#Index <small>Subtext for header</small></h1>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<%= image_tag "bb16mkt_crop.jpg", class: "Mako Torq" %>
+				<div class="caption">
+					<h3>2016 Easton MAKO TORQ</h3>
+					<p>Hello WOrld</p>
+					<p>
+						<a href="#" class="btn btn-primary" role="button">Buy Now</a>
+						<a href="#" class="btn btn-default" role="button">Button</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img src="..." alt="...">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>...</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+
+
 <h1> Bats </h1>
 <p><%= link_to 'New Bat', new_bat_path %></p>
 <% @bats.each do |bat| %>
