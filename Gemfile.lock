@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: 850a199da1f827571d3a21b075be45fe7d853e8f
+  specs:
+    paperclip (4.3.1)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -88,12 +99,6 @@ GEM
     multi_json (1.11.2)
     nokogiri (1.6.7)
       mini_portile2 (~> 2.0.0.rc2)
-    paperclip (4.3.2)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      cocaine (~> 0.5.5)
-      mime-types
-      mimemagic (= 0.3.0)
     pdf-core (0.6.0)
     pg (0.18.4)
     prawn (2.0.2)
@@ -176,7 +181,7 @@ DEPENDENCIES
   invoicing
   jbuilder (~> 2.0)
   jquery-rails
-  paperclip
+  paperclip!
   pg
   prawn
   rails (= 4.2.4)
